@@ -6,3 +6,8 @@
 
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/ffa09347-b822-49f7-ae1a-a4a5bea95c76" />
 
+### SWITCH STATEMENT WITH DEFAULT OPTION
+
+<img width="349" alt="image" src="https://github.com/user-attachments/assets/dcbed2b3-456f-451a-a641-b9ac9c2ec30c" />
+
+
