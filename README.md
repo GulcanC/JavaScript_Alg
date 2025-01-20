@@ -14,4 +14,8 @@
 
 <img width="331" alt="image" src="https://github.com/user-attachments/assets/ba26f8b5-50d7-4b75-a5c6-e90e7def1a8c" />
 
+### COUNTING CARDS 
+
+<img width="611" alt="image" src="https://github.com/user-attachments/assets/b322bacf-82df-4d34-ab24-fc2e4c139bb6" />
+
 
