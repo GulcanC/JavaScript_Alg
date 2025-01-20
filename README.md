@@ -10,4 +10,8 @@
 
 <img width="349" alt="image" src="https://github.com/user-attachments/assets/dcbed2b3-456f-451a-a641-b9ac9c2ec30c" />
 
+### SWITCH STATEMENT WITHOUT BREAK STATEMENT
+
+<img width="331" alt="image" src="https://github.com/user-attachments/assets/ba26f8b5-50d7-4b75-a5c6-e90e7def1a8c" />
+
 
