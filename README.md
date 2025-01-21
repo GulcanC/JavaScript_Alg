@@ -18,4 +18,8 @@
 
 <img width="611" alt="image" src="https://github.com/user-attachments/assets/b322bacf-82df-4d34-ab24-fc2e4c139bb6" />
 
+### TESTING OBJECTS FOR PROPERTIES
+
+<img width="625" alt="image" src="https://github.com/user-attachments/assets/b0c44ea4-7a0c-4824-8f88-9f2d7c88f49e" />
+
 
