@@ -22,4 +22,7 @@
 
 <img width="625" alt="image" src="https://github.com/user-attachments/assets/b0c44ea4-7a0c-4824-8f88-9f2d7c88f49e" />
 
+### RECORD COLLECTION
+
+<img width="621" alt="image" src="https://github.com/user-attachments/assets/ae1129fa-f5a3-4fd7-9a07-a62ac0bbb9aa" />
 
