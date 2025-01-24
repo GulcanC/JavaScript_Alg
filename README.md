@@ -26,3 +26,6 @@
 
 <img width="621" alt="image" src="https://github.com/user-attachments/assets/ae1129fa-f5a3-4fd7-9a07-a62ac0bbb9aa" />
 
+### PROFILE LOOKUP
+
+<img width="605" alt="image" src="https://github.com/user-attachments/assets/a549a342-2609-4e1f-b981-41acc60236b9" />
