@@ -659,3 +659,280 @@ function rangeNum(startNum, endNum) {
 }
 
 console.log(rangeNum(2, 6));
+
+//🦚🦚🦚🦚🦚🦚 REPEAT METHOD 🦚🦚🦚🦚🦚🦚// 
+
+document.write("REPEAT METHOD" + `<br>` + `<br>`);
+
+document.write('👩‍🚒Gulcan COSKUN👩‍🚒'.repeat('3') + `<br>` + `<br>`)
+
+document.write('Sedat COSKUN👩‍🚒'.repeat('3') + `<br>` + `<br>`)
+
+
+//🦚🦚🦚🦚🦚🦚 CONCATINATION METHOD 🦚🦚🦚🦚🦚🦚// 
+
+document.write("CONCATINATION METHOD" + `<br>` + `<br>`);
+
+document.write('👩‍🚒Gulcan COSKUN👩‍🚒'.concat(3) + `<br>` + `<br>`)
+document.write('7'.concat(3) + `<br>` + `<br>`)
+document.write('Gul'.concat('can') + `<br>`)
+
+//🦚🦚🦚🦚🦚🦚 PARSEINT METHOD 🦚🦚🦚🦚🦚🦚// 
+
+console.log((parseInt('664')))
+
+//🦚🦚🦚🦚🦚🦚 CONERT NUMBERS TO ROMAN NUMBERS 🦚🦚🦚🦚🦚🦚// 
+
+//🦚🦚 MATH FLOOR METHOD 🦚🦚// 
+
+document.write('🦚🦚Math fllor🦚🦚' + `<br>` + `<br>`)
+document.write('The result of the 50/18 is  2.7777 but the result of the floor is  ' + Math.floor(50 / 18) + ' asagi tamamliyor yukariya degil' + `<br>` + `<br>`); //
+document.write('The result of the 5/1000 is  0.005 but the result of the floor is  ' + Math.floor(5 / 1000) + ' asagi tamamliyor yukariya degil' + `<br>` + `<br>`); //
+console.log(5 / 1000)
+
+//🦚🦚 REPEAT METHOD 🦚🦚// 
+
+document.write('"abc".repeat(1) = ' + ("abc".repeat(1)) + `<br>` + `<br>`)
+document.write('"abc".repeat(0) = ' + ("abc".repeat(0)) + `<br>` + `<br>`)
+document.write('"abc".repeat(3) = ' + ("abc".repeat(3)) + `<br>` + `<br>`)
+
+function stringToRoman(num) {
+    let roman = {
+        M: 1000, CM: 900, D: 500,
+        CD: 400, C: 100, XC: 90,
+        L: 50, XL: 40, X: 10,
+        IX: 9, V: 5, IV: 4, I: 1
+    };
+    let str = '';
+
+    for (let i of Object.keys(roman)) {
+        let q = Math.floor(num / roman[i]);
+        console.log(num) // 5
+        console.log(roman[i]) // 5
+        console.log(i) // V
+        console.log(num / roman[i]) // 1
+        console.log(q); //  1
+        num -= q * roman[i]; // num = num - (q*roman[i]) => (5-(1*5)) => num = 0
+        str += i.repeat(q) // str = str+ i.repeat(1) => 
+        console.log(i); // V
+        console.log(q * roman[i]) // 5
+        console.log(i.repeat(q)) // V
+        console.log(num)
+        console.log(str) // 
+    }
+
+
+    return str;
+}
+
+console.log(stringToRoman(123));
+
+// 🦚🦚 SPLIT METHOD 🦚🦚
+
+const myString = "Bonjour, je m'appelle Gulcan COSKUN"
+const splitLetter = myString.split("")
+console.log(splitLetter);
+
+const myString1 = "Bonjour, je m'appelle Gulcan COSKUN"
+const splitLetter1 = myString1.split(" ")
+console.log(splitLetter1);
+
+// 🦚🦚 REPEAT METHOD 🦚🦚
+
+console.log(("Gulcan COSKUN ").repeat(4))
+
+// 🦚🦚 CONCAT METHOD 🦚🦚
+console.log(("Gulcan COSKUN").concat(' Sedat'))
+
+// 🦚🦚 REVERSED STRING 🦚🦚 
+
+// Given a string, return a new string with the reversed order of characters
+
+function reverseString(str) {
+    var newString = "";
+    for (var i = str.length - 1; i >= 0; i--) {
+        newString += str[i];
+    }
+    return newString;
+}
+console.log(reverseString('hello'));
+
+
+// 🦚🦚  STRING IS POLINDROM 🦚🦚 
+
+// Palindrom is a word, phrase, number or other sequence of characters which reads the same backward or forward.
+
+function palinndrom(string3) {
+    for (let i = 0; i < string3.length / 2; i++) {
+        if (string3[i] === string3[string3.length - 1 - i]) {
+
+            return 'It is palindrome!'
+        }
+        else { return 'it is not palindrome!' }
+    }
+}
+
+console.log(palinndrom('coloce'))
+
+// 🦚🦚  FACTORIALIZE A NUMBER 🦚🦚
+
+function factorialize(num) {
+    if (num === 0 || num === 1) {
+        console.log('the result is 1');
+        return 1;
+    } else {
+        for (let i = num - 1; i > 0; i--) {
+            num = num * i;
+        }
+        return num;
+    }
+}
+console.log(factorialize(6));
+
+// 🦚🦚  REPEAT A STRING USING  🦚🦚
+
+function repeatStrTimes(string, times) {
+    if (times < 0) {
+        return "";
+    } if (times === 1) { return string; }
+    else {
+        return string + repeatStrTimes(string, times - 1);
+    }
+}
+console.log(repeatStrTimes("Gul", 5));
+
+// 🦚🦚 CONFIRM THE ENDING OF A STRING 🦚🦚
+
+// 🦚🦚 METHOD SUBSTRING substr()
+
+console.log(('Gulcan').substr(2, 2)); // lc => soldan iki tane sayiyor ve iki taneyi return yapiyor
+console.log(('Gulcan').substr(3, 2)); // lc => soldan 3 tane sayiyor ve iki taneyi return yapiyor
+console.log(('Gulcan').substr(2)); // lc => soldan iki tane sayiyor ve geri kalani return yapiyor
+
+function confirmEnd(string, target) {
+    if (string.substr(-target.length) === target) {
+        return true;
+
+    } else {
+        return false;
+    }
+}
+
+console.log(confirmEnd('Gul', 'l'));
+
+// 🦚🦚 FIND THE LONGEST WORD IN THE STRING
+
+function findLongest(str) {
+
+    let splitString = str.split(' ');
+    console.log(splitString);
+    longestWord = ' ';
+
+    for (let i = 0; i < splitString.length; i++) {
+        if (splitString[i].length > longestWord.length) {
+            longestWord = splitString[i];
+        }
+    }
+    console.log('The longest word = ' + longestWord + '. The longest length = ' + longestWord.length)
+    return longestWord;
+
+}
+
+console.log(findLongest("Ben çok para kazanacagim ve çocuklarimla, yegenlerimle, annem ve kardesimle dünyayi gezecegim!"));
+
+
+// 🦚🦚 FIND THE SMALLEST WORD IN THE STRING
+
+function smallestWord() {
+
+
+    let stringSplit = stringX.split(' ');
+    let smallestWord = stringSplit[0];
+    console.log(stringSplit);
+    console.log(stringSplit.length)
+    console.log(smallestWord.length)
+    for (let i = 0; i < stringSplit.length; i++) {
+
+        if (stringSplit[i].length < smallestWord.length) {
+            smallestWord = stringSplit[i];
+        }
+    }
+    console.log(smallestWord)
+    return smallestWord;
+}
+
+let stringX = 'Ben G cok para kazanacagim, karavan alacagim, yol bisikleti alacagim, ve dunyayai gezecegim'
+
+console.log(smallestWord(stringX));
+
+
+// 🦚🦚 TITLE CASE A SENTENCE WITH FOR LOOP
+
+// 🦚🦚 split mathod 
+
+document.write('🦚 SPLIT METHOD' + '</br>' + '</br>');
+
+document.write('split("Ben çok para kazanacagim") => ' + ("Ben çok para kazanacagim").split(" ") + '</br>' + '</br>');
+
+// 🦚🦚 CHARAT mathod 
+
+document.write('🦚 CHARAT METHOD =' + ' returns the character at the specified index in a string' + '</br>' + '</br>');
+
+document.write('("CokPara").charAt(0)  => ' + ("CokPara").charAt(0) + '</br>' + '</br>');
+
+// 🦚🦚 SLICE mathod 
+
+document.write('🦚 Slice method = It extrcats  a section of the string and returns it as a new string' + '</br>' + '</br>');
+
+document.write("('CokParaKazanacagim').slice(7) = " + ('CokParaKazanacagim').slice(7) + '</br>' + '</br>'); // we are starting from left and from 0, then when we come to 7, we will choose all letters by starting from 7. 
+document.write("('CokParaKazanacagim').slice(-7) = " + ('CokParaKazanacagim').slice(-7) + '</br>' + '</br>'); // here we start from right and we will choose from between 0 and 7 from right. 
+document.write("('CokParaKazanacagim').slice(4, 7) = " + ('CokParaKazanacagim').slice(4, 7) + '</br>' + '</br>'); // we come to 4 and 7, we choose between 4 and 7
+
+
+function titleCase(string) {
+
+    // first lowercase the string, then split the string into an array of strings.
+    string = string.toLowerCase().split(' ');
+
+    for (var i = 0; i < string.length; i++) {
+
+        string[i] = string[i].charAt(0).toUpperCase() + string[i].slice(1);
+
+    }
+    return string.join(' ');
+}
+
+console.log(titleCase('Ben çok para kazanacagim!'));
+
+
+// 🦚🦚 FIND LARGEST NUMBER IN THE ARRAY
+
+function findLargest() {
+    let largestNum = 0;
+
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] > largestNum) {
+            largestNum = array[i];
+        }
+    }
+    return largestNum
+}
+let array = [5, 7, 90, 3, 65, 123, 0, 234, -543];
+console.log(findLargest(array));
+
+
+// 🦚🦚 FIND SMALLEST NUMBER IN THE ARRAY
+
+function findSmallest() {
+    let smallestNum = 0;
+
+    for (let i = 0; i < array1.length; i++) {
+        if (array1[i] < smallestNum) {
+            smallestNum = array1[i];
+        }
+
+    }
+    return smallestNum;
+}
+let array1 = [4, -4, 90, 0, -78, 98, 1, 7, 6, -765, 87]
+console.log(findSmallest(array1))
